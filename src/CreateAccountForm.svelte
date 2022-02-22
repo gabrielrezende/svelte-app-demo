@@ -1,28 +1,35 @@
 <script>
     import Input from "./Input.svelte";
-    import Button from "./Button.svelte";
+    import Button from "./ButtonAccount.svelte";
 
     const onClickFacebook = () => {
         console.log('facebook');
     }
+
     const onClickGoogle = () => {
         console.log('google');
     }
-    const onClickEntrar = () =>{
-        console.log('entra');
+
+    const onClickCriarConta = () =>{
+        console.log('criar');
     }
+
     const onClickLinkedin = () =>{
         console.log('linkedin');
     }
 </script>
 
 <div class="container">
-    <Input type="text" placeholder="Digite o seu e-mail" />
-    <Input type="text" placeholder="Digite a sua senha" />
-    <div class="container-botoes-de-acao">
-        <a href="/esqueci-minha-senha"> Esqueci minha senha </a>
-        <Button onClick={onClickEntrar}>
-            Entrar
+    <Input type="text" placeholder="First Name" />
+    <Input type="text" placeholder="Last Name" />
+    <Input type="text" placeholder="Username" />
+    <Input type="text" placeholder="Sexo" />
+    <Input type="text" placeholder="Nascimento" />
+    <Input type="text" placeholder="E-mail" />
+    <Input type="text" placeholder="Senha" />
+    <div class="container-botoes-de-acao">        
+        <Button onClick={onClickCriarConta}>
+            Criar Conta
         </Button>
     </div>
     <p>OU</p>
@@ -49,13 +56,8 @@
         width: 100%;
         height: 50px;
         display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-    }
-    a{
-        font-size: 12px;
-    }
+        flex-direction: column;
+    }    
     p{
         text-align: center;
         font-size: 24px;

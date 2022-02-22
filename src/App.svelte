@@ -1,5 +1,6 @@
 <script>
 	import CreateUserForm from "./CreateUserForm.svelte";
+	import CreateAccountForm from "./CreateAccountForm.svelte";
 </script>
 
 <div class="container">
@@ -19,7 +20,7 @@
 		</div>
 		<a href="/criar-conta" class="botao-criar-conta">
 			Criar conta
-		</a>
+		</a>		
 	</div>
 </div>
 
@@ -36,7 +37,7 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		/*justify-content: center;*/
+		/* justify-content: center; */
 	}
 	.container-lado.container-lado-esquerdo{
 		border-right: #333333 1px solid;
@@ -59,5 +60,5 @@
 	}
 	.botao-criar-conta{
 		margin: 20px;
-	}
+	}	
 </style>
